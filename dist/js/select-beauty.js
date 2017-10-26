@@ -107,6 +107,7 @@ class SelectBeauty {
 		let _this = this;
 		$(document).find('[data-instance="'+this.el+'"] ul').on('click', 'a', function(ev) {
 			ev.stopPropagation();
+			ev.preventDefault();
 			let el = $(this);
 			let id = el.attr('data-value');
 			let parent = el.parent();
