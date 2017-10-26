@@ -34,5 +34,14 @@ var beauty = new SelectBeauty({
 });
 ```
 
+#### Other Functions
+Using ``select-beauty`` package, we have some function to make more easy for using this script
+
+| Functions        | Description           |
+|:-------------:|-------------|
+| ``instanceName.reload()`` | This can use for reloading the beauty-select |
+| ``instanceName.getTemporaryData()`` | For creating new temporary data from select option. And use the ``instanceName.tempData`` to get the temporary data as object |
+| ``instanceName.selected`` | Will return value of the select option as array |
+
 #### Demo
 ![Select Beauty](https://s1.postimg.org/8335nuz27j/Screenshot_from_2017-10-26_09-52-51.png "Demo of Select Beauty")
