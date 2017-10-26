@@ -1,0 +1,203 @@
+/**
+ *
+ * Select Beauty
+ * Is a plugin for make select are beautyfull
+ *
+ * Author: Satria Aji Putra
+ * Company: Satmaxt Developer
+ * Created At: 25/10/17;
+ * License: MIT
+ *
+ */
+body {
+ 	max-width: 50%;
+ 	margin: 20px auto;
+}
+h2,h3 {
+	font-family: sans-serif;
+	color: #888;
+}
+select {
+	display: block;
+	width: auto;
+	padding: 3px 10px;
+}
+.button-sb {
+	padding: 8px 10px;
+	background: #f2f2f2;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	color: #818181;
+	font-family: sans-serif;
+	outline: none;
+	transition: all .3s ease-in-out;
+}
+.button-sb:hover {
+	background: #818181;
+	color: #fff;
+}
+.button-sb-block {
+	display: block;
+	width: 100%;
+}
+.hide {
+	display: none;
+}
+.select-beauty {
+	position: relative;
+	display: block;
+}
+.select-beauty button {
+	background: #f2f2f2;
+	border: 1px solid #ccc;
+	color: #818181;
+	text-align: left;
+}
+.select-beauty ul {
+	position: absolute;
+	padding: 0 15px;
+	margin: 0;
+	list-style: none;
+	background: #f2f2f2;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	box-shadow: 0px 10px 10px 2px rgba(0,0,0,.09);
+	border: 1px solid #ccc;
+	border-top: none;
+	top: auto;
+}
+.select-beauty ul li {
+	float: left;
+	width: 33.333%;
+}
+.select-beauty ul li a {
+	display: block;
+	font-size: 12px;
+	padding: 10px 0;
+	color: #818181;
+	font-weight: 600;
+	/* text-align: center; */
+	font-family: sans-serif;
+	text-decoration: none !important;
+	transition: all .2s ease-in-out;
+}
+.select-beauty ul li a:hover, .select-beauty ul li.active a {
+	color: #2aabe4;
+}
+
+/* Icon Work */
+.iw {
+	background-image: url('../img/sprite.png');
+	width: 40px;
+	height: 40px;
+	background-size: 40px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	/* margin: 1px 10px 1px 0px; */
+	vertical-align: middle;
+}
+.iw-dozer {
+	background-position: 0px -40px;
+}
+.iw-dozer:hover, .select-beauty ul li a:hover .iw-dozer, .select-beauty ul li.active a .iw-dozer {
+	background-position: 0px -680px;
+}
+.iw-excavator {
+	background-position: 0px -80px;
+}
+.iw-excavator:hover, .select-beauty ul li a:hover .iw-excavator, .select-beauty ul li.active a .iw-excavator {
+	background-position: 0px -120px;
+}
+.iw-tools {
+	background-position: 0px -160px;
+}
+.iw-tools:hover, .select-beauty ul li a:hover .iw-tools, .select-beauty ul li.active a .iw-tools {
+	background-position: 0px -200px;
+}
+.iw-pickup {
+	background-position: 0px -240px;
+}
+.iw-pickup:hover, .select-beauty ul li a:hover .iw-pickup, .select-beauty ul li.active a .iw-pickup {
+	background-position: 0px -280px;
+}
+.iw-scope {
+	background-position: 0px -320px;
+}
+.iw-scope:hover, .select-beauty ul li a:hover .iw-scope, .select-beauty ul li.active a .iw-scope {
+	background-position: 0px -360px;
+}
+.iw-warning {
+	background-position: 0px -400px;
+}
+.iw-warning:hover, .select-beauty ul li a:hover .iw-warning, .select-beauty ul li.active a .iw-warning {
+	background-position: 0px -440px;
+}
+.iw-hammer-o {
+	background-position: 0px -480px;
+}
+.iw-hammer-o:hover, .select-beauty ul li a:hover .iw-hammer-o, .select-beauty ul li.active a .iw-hammer-o {
+	background-position: 0px -520px;
+}
+.iw-drill {
+	background-position: 0px -560px;
+}
+.iw-drill:hover, .select-beauty ul li a:hover .iw-drill, .select-beauty ul li.active a .iw-drill {
+	background-position: 0px -600px;
+}
+.iw-hat {
+	background-position: 0px -640px;
+}
+.iw-hat:hover, .select-beauty ul li a:hover .iw-hat, .select-beauty ul li.active a .iw-hat {
+	background-position: 0px 0px;
+}
+.iw-head {
+	background-position: 0px -720px;
+}
+.iw-head:hover, .select-beauty ul li a:hover .iw-head, .select-beauty ul li.active a .iw-head {
+	background-position: 0px -760px;
+}
+.iw-bag {
+	background-position: 0px -800px;
+}
+.iw-bag:hover, .select-beauty ul li a:hover .iw-bag, .select-beauty ul li.active a .iw-bag {
+	background-position: 0px -840px;
+}
+.iw-hammer {
+	background-position: 0px -880px;
+}
+.iw-hammer:hover, .select-beauty ul li a:hover .iw-hammer, .select-beauty ul li.active a .iw-hammer {
+	background-position: 0px -920px;
+}
+.iw-building {
+	background-position: 0px -960px;
+}
+.iw-building:hover, .select-beauty ul li a:hover .iw-building, .select-beauty ul li.active a .iw-building {
+	background-position: 0px -1000px;
+}
+.iw-way {
+	background-position: 0px -1040px;
+}
+.iw-way:hover, .select-beauty ul li a:hover .iw-way, .select-beauty ul li.active a .iw-way {
+	background-position: 0px -1080px;
+}
+.iw-note {
+	background-position: 0px -1120px;
+}
+.iw-note:hover, .select-beauty ul li a:hover .iw-note, .select-beauty ul li.active a .iw-note {
+	background-position: 0px -1160px;
+}
+.iw-key {
+	background-position: 0px -1200px;
+}
+.iw-key:hover, .select-beauty ul li a:hover .iw-key, .select-beauty ul li.active a .iw-key {
+	background-position: 0px -1240px;
+}
+.iw-crane {
+	background-position: 0px -1280px;
+}
+.iw-crane:hover, .select-beauty ul li a:hover .iw-crane, .select-beauty ul li.active a .iw-crane {
+	background-position: 0px -1320px;
+}

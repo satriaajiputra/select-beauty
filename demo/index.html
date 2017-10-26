@@ -1,0 +1,61 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>SelectBeauty</title>
+	<link rel="stylesheet" href="../dist/css/select-beauty.css">
+</head>
+<body>
+	<h2>Demo of Select Beauty</h2>
+	<hr />
+
+	<h3>Without Select Beauty</h3>
+	<select>
+		<option value="1" icon="iw-way">Remote Location</option>
+		<option value="2" icon="iw-crane">Work From Height</option>
+		<option value="3" icon="iw-scope">Field Visit</option>
+		<option value="4" icon="iw-excavator">Active Machinery</option>
+		<option value="5" icon="iw-key">Some Overtime Required</option>
+		<option value="6" icon="iw-warning">Hazardous Conditions</option>
+		<option value="7" icon="iw-bag">Office Based</option>
+		<option value="8" icon="iw-dozer">Active Machinery</option>
+		<option value="9" icon="iw-pickup">Driving Required</option>
+		<option value="10" icon="iw-hammer">Physical Demanding</option>
+		<option value="11" icon="iw-drill">High Stress Situation</option>
+		<option value="12" icon="iw-note">Shift Work</option>
+		<option value="13" icon="iw-head">Long Shift</option>
+		<option value="14" icon="iw-hammer-o">Heavy Lifting</option>
+		<option value="15" icon="iw-hat">Inclement Weather</option>
+		<option value="16" icon="iw-building">Relocation</option>
+		<option value="17" icon="iw-tools">Demanding Deadline</option>
+	</select>
+	<h3>With Select Beauty</h3>
+	<select name="work-condition" id="work-condition" class="form-control">
+		<option value="1" icon="iw-way">Remote Location</option>
+		<option value="2" icon="iw-crane">Work From Height</option>
+		<option value="3" icon="iw-scope">Field Visit</option>
+		<option value="4" icon="iw-excavator">Active Machinery</option>
+		<option value="5" icon="iw-key">Some Overtime Required</option>
+		<option value="6" icon="iw-warning">Hazardous Conditions</option>
+		<option value="7" icon="iw-bag">Office Based</option>
+		<option value="8" icon="iw-dozer">Active Machinery</option>
+		<option value="9" icon="iw-pickup">Driving Required</option>
+		<option value="10" icon="iw-hammer">Physical Demanding</option>
+		<option value="11" icon="iw-drill">High Stress Situation</option>
+		<option value="12" icon="iw-note">Shift Work</option>
+		<option value="13" icon="iw-head">Long Shift</option>
+		<option value="14" icon="iw-hammer-o">Heavy Lifting</option>
+		<option value="15" icon="iw-hat">Inclement Weather</option>
+		<option value="16" icon="iw-building">Relocation</option>
+		<option value="17" icon="iw-tools">Demanding Deadline</option>
+	</select>
+	<script src="../dist/js/jquery.min.js"></script>
+	<script src="../dist/js/select-beauty.js"></script>
+	<script>
+		var beauty = new SelectBeauty({
+			el: '#work-condition',
+			length: 5,
+			max: 10
+		});
+	</script>
+</body>
+</html>
