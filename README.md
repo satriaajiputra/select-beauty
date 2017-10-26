@@ -34,3 +34,5 @@ var beauty = new SelectBeauty({
 });
 ```
 
+#### Demo
+![Select Beauty](https://s1.postimg.org/8335nuz27j/Screenshot_from_2017-10-26_09-52-51.png "Demo of Select Beauty")
