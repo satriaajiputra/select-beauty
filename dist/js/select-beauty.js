@@ -17,8 +17,8 @@ class SelectBeauty {
 		this.placeholder = (typeof data.placeholder !== "undefined") ? data.placeholder : "Select Something";
 		this.length = (typeof data.length !== "undefined") ? data.length : 3;
 		this.max = (typeof data.max !== "undefined") ? data.max : false;
-		this.tempData = {};
 		this.selected = {};
+		this.tempData = {};
 		this.getTemporaryData();
 		this.getHtml();
 		this.hideSelect();
@@ -149,5 +149,15 @@ class SelectBeauty {
 		} else {
 			btnElement.text(btnText.join(', '));
 		}
+	}
+
+	reload()
+	{
+		this.selected = {};
+		this.tempData = {};
+		$(this.el).val([]);
+		this.getTemporaryData();
+		$(document).find('[data-instance="'+this.el+'"] ul').html('');
+		$(document).find('[data-instance="'+this.el+'"] ul').html(this.htmlData());
 	}
 }
