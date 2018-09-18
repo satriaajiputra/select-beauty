@@ -11,7 +11,7 @@ Easy to use this package, first for all you have this plugin script and JQuery. 
 #### JavaScript
 ```html
 <script src="assets/select-beauty/dist/js/jquery.min.js"></script>
-<script src="assets/select-beauty/dist/js/select-beauty.js"></script>
+<script src="assets/select-beauty/dist/js/select-beauty.stable.min.js"></script>
 ```
 
 #### Example Select
