@@ -44,4 +44,4 @@ Using ``select-beauty`` package, we have some function to make more easy for usi
 | ``instanceName.selected`` | Will return value of the select option as array |
 
 #### Demo
-![Select Beauty](https://s1.postimg.cc/8335nuz27j/Screenshot_from_2017-10-26_09-52-51.png "Demo of Select Beauty")
+![Select Beauty](https://i.postimg.cc/65VMd1mN/Screenshot-from-2017-10-26-09-52-51.png "Demo of Select Beauty")
