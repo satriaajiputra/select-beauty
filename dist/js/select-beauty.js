@@ -17,6 +17,7 @@ class SelectBeauty {
 		this.placeholder = (typeof data.placeholder !== "undefined") ? data.placeholder : "Select Something";
 		this.length = (typeof data.length !== "undefined") ? data.length : 3;
 		this.max = (typeof data.max !== "undefined") ? data.max : false;
+		this.initSelected = (typeof data.selected !== "undefined") ? data.selected : [];
 		this.selected = {};
 		this.tempData = {};
 		this.getTemporaryData();
@@ -26,6 +27,7 @@ class SelectBeauty {
 		this.buttonListener();
 		this.toggleListener();
 		this.selectListener();
+		this.filter();
 	}
 
 	// get data from select
@@ -35,12 +37,31 @@ class SelectBeauty {
 
 		$.each($(this.el).children(), function(i, r) {
 			let el = $(r);
+			let value = el.attr('value');
 			let data = {
 				text: el.text(),
 				icon: el.attr('icon')
 			}
-			_this.tempData[el.attr('value')] = data;
+
+			_this.tempData[value] = data;
+			
+			// check if the initSelected is not empty
+			if(_this.initSelected.length > 0) {
+				// if the value is in array of initSelected
+				if(_this.inArray(_this.initSelected, value)) {
+					// if so, add to the selected property
+					_this.selected[value] = _this.tempData[value];
+				}
+			}
 		});
+	}
+
+	// check if a value is in array
+	inArray(array, find)
+	{
+		return array.findIndex(function(value) {
+			return value == find
+		}) > -1 ? true : false;
 	}
 
 	// hide select with add attribute multiple
@@ -60,8 +81,12 @@ class SelectBeauty {
 		let html = '';
 
 		for(name in this.tempData) {
+
+			// check if the element is active or not while rendering the html
+			let active = this.inArray(this.initSelected, name) ? 'active' : '';
+
 			html += `
-				<li>
+				<li class="${active}">
 					<a href="#" data-value="${name}"><i class="iw ${this.tempData[name].icon}"></i> ${this.tempData[name].text}</a>
 				</li>
 			`;

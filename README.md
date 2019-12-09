@@ -30,7 +30,8 @@ var beauty = new SelectBeauty({
   el: '#work-condition', // element with only id selector
   placeholder: 'Select Something...', // placeholder for button
   length: 5, // max length to show the selected items
-  max: 10 // max length to select the item
+  max: 10, // max length to select the item
+  selected: [1,3,7,17] // set default selected value
 });
 ```
 

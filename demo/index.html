@@ -49,12 +49,13 @@
 		<option value="17" icon="iw-tools">Demanding Deadline</option>
 	</select>
 	<script src="../dist/js/jquery.min.js"></script>
-	<script src="../dist/js/select-beauty.js"></script>
+	<script src="../dist/js/select-beauty.stable.min.js"></script>
 	<script>
 		var beauty = new SelectBeauty({
 			el: '#work-condition',
 			length: 5,
-			max: 10
+			max: 10,
+			selected: [7,11,17,1]
 		});
 	</script>
 </body>
